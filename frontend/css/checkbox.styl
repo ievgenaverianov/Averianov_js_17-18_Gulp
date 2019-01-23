@@ -1,0 +1,43 @@
+.jqCheckbox,
+.cssCheckbox
+  margin: 0 0 20px 0
+  text-align: start
+
+.customCheckbox
+  width: 17px
+  height: 17px
+  display: inline-block
+  cursor: pointer
+  background: url(../../img/checkbox-sprite.png)
+  position: relative
+  top: 3px
+
+.customCheckbox input
+  display: none
+
+.cssCheckbox input[type=checkbox]
+  position: absolute
+  clip: rect(0, 0, 0, 0)
+
+label
+  cursor: pointer
+  font-family: Verdana, Helvetica, sans-serif
+
+.cssCheckbox label:before
+  content: " "
+  display: inline-block
+  width: 17px
+  height: 17px
+  background: url(../../img/checkbox-sprite.png)
+  position: relative
+  top: 3px
+  margin-right: 4px
+
+.cssCheckbox input[type=checkbox]:checked + label:before
+  background-position: 0 -17px
+
+.cssCheckbox label:hover:before
+  background-position: 0 -34px
+
+.cssCheckbox input[type=checkbox]:checked + label:hover:before
+  background-position: 0 -51px

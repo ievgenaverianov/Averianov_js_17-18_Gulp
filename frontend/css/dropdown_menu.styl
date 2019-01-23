@@ -1,0 +1,76 @@
+.header ul
+  list-style: none
+
+.header a
+  text-decoration: none
+  text-transform: uppercase
+  color: #ffffff
+  font-family: Verdana, Helvetica, sans-serif
+  font-size: 14px
+
+.menu
+  display: flex
+  justify-content: center
+  align-items: center
+
+.menu > li
+  display: inline
+  width: 200px
+  text-align: center
+  height: 50px
+  line-height: 50px
+
+.menu > li:hover
+  background-color: #60554e
+  transition: all 0.5s
+
+.dropdown_1,
+.dropdown_
+  position: relative
+
+.submenu
+  height: auto
+  position: absolute
+  width: 200px
+  background-color: #60554e
+  z-index: 2
+  line-height: 2em
+  text-align: start
+
+.submenu_1
+  display: none
+  top: 50px
+
+.submenu_2
+  display: inline-block
+  opacity: 0
+  transition: all 0.5s
+  top: 0
+  left: 200px
+
+.submenu_1 > li,
+.submenu_2 > l
+  padding: 6px 15px
+
+.submenu > li:hover
+  box-sizing: border-box
+  background-color: #4E443C
+  transition: all 0.5s
+
+.downarrow
+  display: inline-block
+  width: 0
+  height: 0
+  border-left: 5px solid transparent
+  border-right: 5px solid transparent
+  border-top: 10px solid #fff
+  margin-left: 10px
+
+.rightarrow
+  display: inline-block
+  width: 0
+  height: 0
+  border-top: 5px solid transparent
+  border-left: 10px solid #fff
+  border-bottom: 5px solid transparent
+  margin-left: 32px

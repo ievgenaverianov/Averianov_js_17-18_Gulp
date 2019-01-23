@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework JS-17-18 - Grunt</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/libs/cusel-fixed-min-2.5.js"></script>
+    <script type="text/javascript" src="js/dist/script.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/dist/style.min.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="header">
+        <ul class="menu">
+            <li><a href="#">Expressionism</a></li>
+            <li class="dropdown_1">
+                <a href="#">Impressionism<div class="downarrow"></div></a>
+                <ul class="submenu submenu_1">
+                    <li><a href="#">Pierre Auguste Renoir</a></li>
+                    <li class="dropdown_2">
+                        <a href="#">Claude Monet<div class="rightarrow"></div></a>
+                        <ul class="submenu submenu_2">
+                            <li><a href="#">Biography</a></li>
+                            <li><a href="#">Giverny</a></li>
+                            <li><a href="#">Last years</a></li>
+                            <li><a href="#">Monet's methods</a></li>
+                            <li><a href="#">Fame</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Edgar Degas</a></li>
+                    <li><a href="#">Edouard Manet</a></li>
+                    <li><a href="#">Paul Cézanne</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Cubism</a></li>
+            <li><a href="#">Surrealism</a></li>
+            <li><a href="#">Pop art</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="jcarousel-container">
+            <h2>Basic carousel - Claude Monet</h2>
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="img/claudemonet_1.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/claudemonet_2.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/claudemonet_3.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/claudemonet_4.jpg" width="600" height="400" alt=""></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                <p class="jcarousel-pagination">
+                </p>
+            </div>
+        </div>
+
+        <div class="select-container">
+            <h3>Claude Monet's contemporaries:</h3>
+            <select>
+                <option value="bazille">Jean Frederic Bazille</option>
+                <option value="van_gogh">Vincent Van Gogh</option>
+                <option value="renoir">Pierre Auguste Renoir</option>
+                <option value="pissarro">Camille Pissarro</option>
+                <option value="gauguin">Paul Gauguin</option>
+                <option value="cezanne">Paul Cézanne</option>
+                <option value="lautrec">Henri Toulouse Lautrec</option>
+                <option value="degas">Edgar Degas</option>
+                <option value="manet">Edouard Manet</option>
+            </select>
+        </div>
+
+        <div class="checkbox-container">
+            <div class="jqCheckbox">
+            <span class="customCheckbox">
+                <input type="checkbox" name="ch1" id="check_jq">
+            </span>
+                <label for="check_jq">Checkbox via jQuery</label>
+            </div>
+            <div class="cssCheckbox">
+                <input type="checkbox" id="check_css">
+                <label for="check_css">Checkbox via CSS</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
